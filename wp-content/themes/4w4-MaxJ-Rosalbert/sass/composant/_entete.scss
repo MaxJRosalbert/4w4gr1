@@ -4,7 +4,6 @@
     --BeigeNeutre    : #fede8b;
     --OrangeClassique: #ff9715;
     --OrangeSombre   : #b76b2d; 
-
 }
 
 body{
@@ -16,6 +15,11 @@ body{
 }
 .site__titre h1 {
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
+}
+
+.site__entete h1{
+    text-align: center;
+    
 }
 
 .bar__Navi{
@@ -32,7 +36,7 @@ body{
     padding: 0 25px;
     z-index: 2;
     background-color: var(--OrangeClassique);
-    box-shadow: 0 1px 2px rgba($color: #000000, $alpha: 0.2);
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
 }
 
 .custom-logo-link{
@@ -50,7 +54,6 @@ body{
 .menu__entete{ //nav
     justify-content: space-between;
     list-style: none;
-    // background-color: red;
     width: 100%;
     .menu{ //ul
         display: flex;
@@ -59,11 +62,10 @@ body{
         .menu-item{ //li
             a{
                 border-radius: 30px;
-                // box-shadow: black 5px 5px;
+                box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
                 text-decoration: none;
                 background-color: var(--OrangeSombre);
                 padding: 5px 5px;
-                
             }
             
         }
