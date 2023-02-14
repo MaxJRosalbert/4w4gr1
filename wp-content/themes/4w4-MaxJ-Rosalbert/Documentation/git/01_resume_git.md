@@ -14,7 +14,7 @@
 - git **commit -m "s2c1 on décrit les modification"**
 - **git log**
 - **git log --oneline**
-- **git remote add 4w4 https://github.com/eddytuto/2023-4w4-gr1.git** (créer un alias qui pointe vers votre dépôt github)
+- **git remote add 4w4 <https://github.com/eddytuto/2023-4w4-gr1.git>** (créer un alias qui pointe vers votre dépôt github)
 - **git branch -m main** (change le nom de la branche master pour main)
 - **git branch lab1** (créer la branche «lab1» )
 - **git checkout lab1** (pour changer de branche vers «lab1»)

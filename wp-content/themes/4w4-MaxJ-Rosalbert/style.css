@@ -372,6 +372,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+pre {
+  overflow-x: scroll;
+}
+
 /* --------------------------------------------- composant */
 :root {
   --bleuSombre: #002748;
@@ -448,5 +452,36 @@ body {
   --bleuClassique: #0f4e71;
   --BeigeNeutre: #fede8b;
   --OrangeClassique: #ff9715;
+  --OrangeSombre: #b76b2d9f;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  flex: 1 0 250px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #aaa;
+  background-color: var(--OrangeSombre);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px 15px 15px 15px;
+}
+
+:root {
+  --bleuSombre: #002748;
+  --bleuClassique: #0f4e71;
+  --BeigeNeutre: #fede8b;
+  --OrangeClassique: #ff9715;
   --OrangeSombre: #b76b2d;
+}
+
+main {
+  width: 90vw;
+  margin: auto;
+  background-color: var(--OrangeClassique);
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */

@@ -6,3 +6,12 @@
     --OrangeSombre   : #b76b2d; 
 }
 
+main{
+    width: 90vw;
+    
+    margin: auto;
+    background-color: var(--OrangeClassique);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
+
+}
