@@ -372,17 +372,41 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+ul,
+ol {
+  margin: 1rem 0rem;
+  padding: 3;
+}
+@media screen and (min-width: 700px) {
+  ul,
+ol {
+    margin: 1rem 0.5rem;
+    padding: 5px;
+  }
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul li,
+ol li {
+  margin: 0.5rem 0rem;
+}
+
 pre {
+  background-color: #555;
+  color: #eee;
   overflow-x: scroll;
 }
 
 /* --------------------------------------------- composant */
 :root {
-  --bleuSombre: #002748;
-  --bleuClassique: #0f4e71;
-  --BeigeNeutre: #fede8b;
-  --OrangeClassique: #ff9715;
-  --OrangeSombre: #b76b2d;
+  --bleuSombre: rgb(0, 39, 72);
+  --bleuClassique: rgb(103, 172, 209);
+  --BeigeNeutre: rgb(254, 222, 139);
+  --OrangeClassique: rgb(255, 151, 21);
+  --OrangeSombre: rgb(151, 75, 13);
 }
 
 body {
@@ -448,11 +472,11 @@ body {
 }
 
 :root {
-  --bleuSombre: #002748;
-  --bleuClassique: #0f4e71;
-  --BeigeNeutre: #fede8b;
-  --OrangeClassique: #ff9715;
-  --OrangeSombre: #b76b2d9f;
+  --bleuSombre: rgb(0, 39, 72);
+  --bleuClassique: rgb(103, 172, 209);
+  --BeigeNeutre: rgb(254, 222, 139);
+  --OrangeClassique: rgb(255, 151, 21);
+  --OrangeSombre: rgb(151, 75, 13);
 }
 
 .blocflex {
@@ -461,6 +485,7 @@ body {
   flex-wrap: wrap;
 }
 .blocflex article {
+  width: 90%;
   flex: 1 0 250px;
   padding: 5px;
   margin: 10px;
@@ -468,14 +493,6 @@ body {
   background-color: var(--OrangeSombre);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px 15px 15px 15px;
-}
-
-:root {
-  --bleuSombre: #002748;
-  --bleuClassique: #0f4e71;
-  --BeigeNeutre: #fede8b;
-  --OrangeClassique: #ff9715;
-  --OrangeSombre: #b76b2d;
 }
 
 main {

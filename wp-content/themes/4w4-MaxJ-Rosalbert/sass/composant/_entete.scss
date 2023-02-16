@@ -1,9 +1,9 @@
 :root{
-    --bleuSombre     : #002748;
-    --bleuClassique  : #0f4e71;
-    --BeigeNeutre    : #fede8b;
-    --OrangeClassique: #ff9715;
-    --OrangeSombre   : #b76b2d; 
+    --bleuSombre     : rgb(0, 39, 72);
+    --bleuClassique  : rgb(103, 172, 209);
+    --BeigeNeutre    : rgb(254, 222, 139);
+    --OrangeClassique: rgb(255, 151, 21);
+    --OrangeSombre   : rgb(151, 75, 13); 
 }
 
 body{
@@ -43,6 +43,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    // height : 450px;
+    // width  : 450px;
 }
 .custom-logo{
     width: 40%;

@@ -1,19 +1,32 @@
 ul,
 ol{
-
+    margin: 1rem 0rem;
+    padding: 3;
+    @media screen and (min-width: 700px){
+        margin: 1rem .5rem;
+        padding: 5px;
+    }
 }
 
+ul{
+    list-style-type: circle;
+    // width: 60%;
+}
 ul li,
-ol li{}
+ol li{
+    margin: .5rem 0rem;
+}
 
-li > ol {}
-li > ul {}
+// li > ol {}
+// li > ul {}
 
 pre{
-    overflow-y: scroll;
+    background-color: #555;
+    color: #eee;
+    overflow-x: scroll;
 }
-code{}
+// code{}
 
-strong{}
+// strong{}
 
-hr{}
+// hr{}

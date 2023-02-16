@@ -1,3 +1,27 @@
+ul,
+ol {
+  margin: 1rem 0rem;
+  padding: 3;
+}
+@media screen and (min-width: 700px) {
+  ul,
+ol {
+    margin: 1rem 0.5rem;
+    padding: 5px;
+  }
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul li,
+ol li {
+  margin: 0.5rem 0rem;
+}
+
 pre {
-  overflow-y: scroll;
+  background-color: #555;
+  color: #eee;
+  overflow-x: scroll;
 }/*# sourceMappingURL=markdown.css.map */
