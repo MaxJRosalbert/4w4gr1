@@ -1,18 +1,23 @@
 ul,
 ol {
-  margin: 1rem 0rem;
-  padding: 3;
+  margin: 0rem 0rem;
+  padding: 7px;
+  color: #444;
+  list-style-type: none;
+}
+@media screen and (min-width: 400px) {
+  ul,
+ol {
+    margin: 1rem 0.5rem;
+    padding: 0 13px;
+  }
 }
 @media screen and (min-width: 700px) {
   ul,
 ol {
     margin: 1rem 0.5rem;
-    padding: 5px;
+    padding: 0 15px;
   }
-}
-
-ul {
-  list-style-type: circle;
 }
 
 ul li,
@@ -20,6 +25,22 @@ ol li {
   margin: 0.5rem 0rem;
 }
 
+ul li::before {
+  content: "-";
+  background: lightgray;
+  border-radius: 0.5rem;
+  padding-inline: 0.3rem;
+  margin-inline-end: 0.3rem;
+}
+
+ul li li::before {
+  background: transparent;
+}
+
+/*
+li > ol {}
+li > ul {}
+*/
 pre {
   background-color: #555;
   color: #eee;

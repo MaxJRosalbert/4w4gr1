@@ -18,6 +18,7 @@
                             "container_class" => "menu__entete"
 
                         )); ?>
+            <?php get_search_form(); ?>
         </nav>
         <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>

@@ -374,19 +374,24 @@ p {
 
 ul,
 ol {
-  margin: 1rem 0rem;
-  padding: 3;
+  margin: 0rem 0rem;
+  padding: 7px;
+  color: #444;
+  list-style-type: none;
+}
+@media screen and (min-width: 400px) {
+  ul,
+ol {
+    margin: 1rem 0.5rem;
+    padding: 0 13px;
+  }
 }
 @media screen and (min-width: 700px) {
   ul,
 ol {
     margin: 1rem 0.5rem;
-    padding: 5px;
+    padding: 0 15px;
   }
-}
-
-ul {
-  list-style-type: circle;
 }
 
 ul li,
@@ -394,6 +399,22 @@ ol li {
   margin: 0.5rem 0rem;
 }
 
+ul li::before {
+  content: "-";
+  background: lightgray;
+  border-radius: 0.5rem;
+  padding-inline: 0.3rem;
+  margin-inline-end: 0.3rem;
+}
+
+ul li li::before {
+  background: transparent;
+}
+
+/*
+li > ol {}
+li > ul {}
+*/
 pre {
   background-color: #555;
   color: #eee;
@@ -469,6 +490,17 @@ body {
   text-decoration: none;
   background-color: var(--OrangeSombre);
   padding: 5px 5px;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+.menu__entete .menu .menu-item::before {
+  content: "";
+  background: transparent;
+  border-radius: 0;
+  padding-inline: 0;
+  margin-inline-end: 0;
 }
 
 :root {
@@ -479,13 +511,16 @@ body {
   --OrangeSombre: rgb(151, 75, 13);
 }
 
+h1 {
+  text-align: center;
+}
+
 .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .blocflex article {
-  width: 90%;
   flex: 1 0 250px;
   padding: 5px;
   margin: 10px;
