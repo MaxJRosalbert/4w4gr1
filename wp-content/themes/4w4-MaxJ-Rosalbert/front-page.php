@@ -17,7 +17,7 @@
                 <hr>
                 <?=  wp_trim_words(get_the_excerpt(), 10, "...") ?>
             </article>
-            <hr>
+            <!-- <hr> -->
             <?php endwhile; ?>
            <?php  endif; ?>
         </section>

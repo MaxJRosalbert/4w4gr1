@@ -25,8 +25,8 @@ add_action( 'after_setup_theme', 'enregistre_menus', 0 );
 
 add_theme_support( 'title-tag' );
 add_theme_support( 'custom-logo', array(
-    'height' => 450,
-    'width'  => 450
+    'height' => 150,
+    'width'  => 150
 ) );
 
 /**
@@ -47,6 +47,6 @@ function cidweb_modifie_requete_principal( $query ) {
           }
          }
          add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
-
+        //  comme addEventLisitner
 
 

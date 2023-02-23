@@ -16,9 +16,18 @@
                             "menu" => "entete",
                             "container" => "nav",
                             "container_class" => "menu__entete"
-
                         )); ?>
+
+<input id="toggle" type="checkbox"></input>
+
+<label for="toggle" class="hamburger">
+  <div class="top-bun"></div>
+  <div class="meat"></div>
+  <div class="bottom-bun"></div>
+</label>
+
             <?php get_search_form(); ?>
+
         </nav>
         <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>
