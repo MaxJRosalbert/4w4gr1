@@ -12,19 +12,23 @@
     <header class="site__entete">
         <nav class="bar__Navi">
             <?php the_custom_logo(); ?> 
+
+            <input type="checkbox" id="checkbox2" class="checkbox2">
+            <label class="menu-burger" for="checkbox2">
+                <div class="hamburger hamburger2">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+
             <?php  wp_nav_menu(array( 
                             "menu" => "entete",
                             "container" => "nav",
                             "container_class" => "menu__entete"
                         )); ?>
 
-<input id="toggle" type="checkbox"></input>
-
-<label for="toggle" class="hamburger">
-  <div class="top-bun"></div>
-  <div class="meat"></div>
-  <div class="bottom-bun"></div>
-</label>
 
             <?php get_search_form(); ?>
 
