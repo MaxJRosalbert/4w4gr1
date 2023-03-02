@@ -19,12 +19,15 @@ Text Domain: 4w4-MaxJ-Rosalbert
 
 /* --------------------------------------------- base */
 @import "base/heading";
-@import "base/markdown.scss";
+@import "base/markdown";
 // @import "base/espacement";
 // @import "base/lien";
 // @import "base/list";
 
 /* --------------------------------------------- composant */
-@import "composant/entete";
-@import "composant/blocflex.scss";
-@import "composant/recherche.scss";
+ @import "composant/entete";
+ @import "composant/blocflex";
+ @import "composant/recherche";
+
+ /* --------------------------------------------- layout */
+ @import "layout/aside-contenu";

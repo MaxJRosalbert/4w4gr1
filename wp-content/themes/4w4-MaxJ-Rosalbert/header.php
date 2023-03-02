@@ -8,9 +8,9 @@
     
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="site">
     <header class="site__entete">
-        <nav class="bar__Navi">
+        <section class="entete__nav">
             <?php the_custom_logo(); ?> 
 
             <input type="checkbox" id="checkbox2" class="checkbox2">
@@ -32,7 +32,25 @@
 
             <?php get_search_form(); ?>
 
-        </nav>
+        </section>
         <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>
 </header>
+<aside class="site__aside">
+    <h3>Menu secondaire</h3>
+
+    <?php 
+        $category = get_queried_object();
+        if (isset($category)){
+            $menu = $category->slug;  
+        }
+        else {
+            $menu = "note-4w4";
+        }
+      // $menu peut prendre les valeurs : "notes-4w4" ou "cours"
+        echo $menu;
+        wp_nav_menu(array(
+        "menu"=>$menu,
+        "container"=>"nav"
+    )) ?>
+</aside>

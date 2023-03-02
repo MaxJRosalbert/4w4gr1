@@ -92,14 +92,14 @@ body{
     
 }
 
-.bar__Navi{
+.entete__nav{
     display: flex;
     position: relative;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     margin: auto;
-    width: 95vw;
+    // width: 95vw;
     height: 10vh;
     border-radius: 0 0 15px 15px;
     padding: 0 25px;
