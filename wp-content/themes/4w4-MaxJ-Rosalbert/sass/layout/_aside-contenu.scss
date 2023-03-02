@@ -14,7 +14,7 @@ Mise en page générale avec display:grid
 
 .site__main {
     grid-area: main;
-    // padding: 1rem clamp(1rem, 3vw, 20rem);
+    padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: rgb(144, 177, 218);
 }
 
@@ -28,6 +28,7 @@ Mise en page générale avec display:grid
     grid-area: aside;
     padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: rgb(139, 228, 173);
+    border-radius: 0 15px 15px 0;
 }
 
 
