@@ -11,12 +11,11 @@
         <section class="blocflex">
             <?php if(have_posts()):
                 while (have_posts()): the_post(); ?>
-                <article>
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                    <?php // get_the_excerpt() ?>
-                    <hr>
-                    <?= wp_trim_words(get_the_excerpt(), 10, " ... "); ?>
-                </article>
+                <?php if (in_category('galerie')) {
+                    get_template_part("template-parts/categorie", "galerie");
+                }else{
+                    get_template_part("template-parts/categorie", "notes-4w4");
+                }?>
                 <?php endwhile; ?>
             <?php  endif; ?>
         </section>

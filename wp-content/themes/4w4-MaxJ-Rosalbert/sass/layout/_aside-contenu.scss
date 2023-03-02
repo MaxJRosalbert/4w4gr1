@@ -6,7 +6,7 @@ Mise en page générale avec display:grid
 
 .site__entete {
     grid-area: header;
-    padding: 1rem clamp(1rem, 3vw, 20rem);
+    // padding: 1rem clamp(1rem, 3vw, 20rem);
     background-color: antiquewhite;
    
     }
