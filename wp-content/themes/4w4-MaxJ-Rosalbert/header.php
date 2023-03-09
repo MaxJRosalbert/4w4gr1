@@ -8,7 +8,7 @@
     
     <?php wp_head(); ?>
 </head>
-<body class="site">
+<body class="site <?php echo(is_front_page()?"no-aside":"")?>">
     <header class="site__entete">
         <section class="entete__nav">
             <?php the_custom_logo(); ?> 
@@ -36,21 +36,10 @@
         <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
         <h2 class="site__description"><?= bloginfo('description'); ?></h2>
 </header>
-<aside class="site__aside">
-    <h3>Menu secondaire</h3>
 
-    <?php 
-        $category = get_queried_object();
-        if (isset($category)){
-            $menu = $category->slug;  
-        }
-        else {
-            $menu = "note-4w4";
-        }
-      // $menu peut prendre les valeurs : "notes-4w4" ou "cours"
-        echo $menu;
-        wp_nav_menu(array(
-        "menu"=>$menu,
-        "container"=>"nav"
-    )) ?>
-</aside>
+<?php
+if (! is_front_page()) {    
+    get_template_part("template-parts/aside") ;
+} 
+
+?>

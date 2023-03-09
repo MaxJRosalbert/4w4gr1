@@ -501,6 +501,7 @@ pre {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     transform: translateX(-30%);
   }
   .custom-logo {
@@ -523,6 +524,7 @@ pre {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   }
   .menu__entete {
+    z-index: 3;
     list-style: none;
     width: 100%;
   }
@@ -539,9 +541,17 @@ pre {
     background-color: var(--OrangeSombre);
     padding: 5px 5px;
     color: aliceblue;
-    font-weight: bold;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
     font-size: small;
+  }
+  .menu__entete .menu .menu-item a:hover {
+    transition: all 0.25s;
+    color: var(--bleuClassique);
+  }
+  .menu__entete .menu .menu-item a:focus {
+    transition: all 0.5s;
+    box-shadow: none;
   }
   .menu__entete .menu .menu-item::before {
     content: "";
@@ -602,6 +612,7 @@ body {
     list-style: none;
     width: 45%;
     height: 30vh;
+    background-color: aqua;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     transform: scaleY(0);
@@ -630,6 +641,11 @@ body {
     font-weight: bold;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: large;
+  }
+  .menu__entete .menu .menu-item a:hover {
+    transition: all 0.5s;
+    box-shadow: none;
+    font-size: larger;
   }
   .menu__entete .menu .menu-item::before {
     content: "";
@@ -692,6 +708,11 @@ main {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.main__sigle > article {
+  width: 90%;
+  margin: auto;
+}
+
 @media screen and (max-width: 992px) {
   .blocflex {
     display: flex;
@@ -723,7 +744,6 @@ Mise en page générale avec display:grid
 */
 .site__entete {
   grid-area: header;
-  background-color: antiquewhite;
 }
 
 .site__main {
@@ -734,6 +754,7 @@ Mise en page générale avec display:grid
 
 .site__footer {
   grid-area: footer;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: rgb(10, 42, 80);
 }
 
@@ -742,6 +763,18 @@ Mise en page générale avec display:grid
   padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: rgb(139, 228, 173);
   border-radius: 0 15px 15px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.site__aside .menu-cours-container .menu li,
+.site__aside .menu-notes-4w4-container .menu li {
+  background-color: var(--bleuClassique);
+  gap: 100px;
+}
+.site__aside .menu-cours-container .menu li a,
+.site__aside .menu-notes-4w4-container .menu li a {
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
 }
 
 .site {
@@ -750,9 +783,19 @@ Mise en page générale avec display:grid
   grid-template-areas: "header" "aside" "main" "footer";
   row-gap: 50px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
   .site {
     grid-template-columns: 20% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
+  }
+}
+
+.no-aside {
+  grid-template-areas: "header" "main" "footer";
+}
+@media screen and (min-width: 992px) {
+  .no-aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
   }
 }/*# sourceMappingURL=style.css.map */

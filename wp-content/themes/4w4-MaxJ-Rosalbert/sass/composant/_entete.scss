@@ -82,6 +82,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1;
         transform: translateX(-30%);
     }
 .custom-logo{
@@ -107,6 +108,7 @@
     }
 
     .menu__entete{ //nav
+        z-index: 3;
         list-style: none;
         width: 100%;
         .menu{ //ul
@@ -125,9 +127,18 @@
                     background-color: var(--OrangeSombre);
                     padding: 5px 5px;
                     color: aliceblue;
-                    font-weight: bold;
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: bold;
                     font-size: small;
+                }
+                a:hover{
+                    transition: all 0.25s;
+                    // font-size: medium;
+                    color: var(--bleuClassique);
+                }
+                a:focus{
+                    transition: all 0.5s;
+                    box-shadow: none;
                 }
             }    
             .menu-item::before{
@@ -241,6 +252,11 @@ body{
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     font-size: large;
                     
+                }
+                a:hover{
+                    transition: all 0.5s;
+                    box-shadow: none;
+                    font-size: larger;
                 }
             }    
             .menu-item::before{

@@ -44,7 +44,6 @@ article:hover{
 
 main{
     width: 90%;
-    
     margin: auto;
     background-color: var(--OrangeClassique);
     border-radius: 15px 15px 15px 15px;
@@ -52,6 +51,10 @@ main{
 
 }
 
+.main__sigle > article{
+    width: 90%;
+    margin: auto;
+}
 
 @media screen and (max-width:992px){
     .blocflex {

@@ -5,7 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-    <main>
+    <main class="main__sigle">
         <pre>single.php</pre>
         <h1>Bienvenue sur 4W4</h1>
     <?php if(have_posts()):
