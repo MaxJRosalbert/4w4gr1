@@ -1,24 +1,99 @@
+:root{
+    --bleuSombre     : rgb(0, 39, 72);
+    --bleuClassique  : rgb(103, 172, 209);
+    --BeigeNeutre    : rgb(254, 222, 139);
+    --OrangeClassique: rgb(255, 151, 21);
+    --OrangeSombre   : rgb(151, 75, 13); 
+    --ombrePortee    : 0 5px 10px rgba($color: #000000, $alpha: 0.5);
+}
+
 .recherche{
-    width: 25%;
+    width: 25vw;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    flex-wrap: nowrap;
+    
+    label{
+        border: 5px solid var(--OrangeSombre);
+        width: 215px;
+        background-color: var(--OrangeSombre);
+        z-index: 1 ;
+        transform: translateX(15px);
+        border-radius: 15px 15px;
+    }
 }
 
-.recherche__input{
 
+.recherche__input{
+    border-radius: 50px;
+    border: none;
 }
 
 .recherche__bouton{
-
+    border-radius: 50%;
+    background-color: red;
+    border: solid 1px black;
+    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
+    z-index: 2;
 }
 
 .recherche__icone{
-    
+    position:relative;
+    display:inline-block;
+    border-radius: 30px;
+    height: 6px;
+    width: 6px;
+    border: 2px solid #888;
+    &:after {
+        content: "";
+        height: 2px;
+        width: 6px;
+        background: #888;
+        position:absolute;
+        top:7px;
+        left:5px;
+        transform: rotate(45deg);
+    }
+
 }
 
 .recherche__section{
-
+    display: flex;
+    flex-direction: column;
+    article{
+        width: 100%;
+    }
 }
 
+//////////////////////////////////// MOBILE ////////////////////////////////////
+@media screen and (max-width:$largeur__mobile) {
+    .recherche{
+        transform: scale(0.75);
+    }
+
+    .recherche__bouton{
+    border-radius: 50%;
+    transform: scale(2);
+    }
+}
+
+/////////////////////////////////// TABLETTE ///////////////////////////////////
+@media screen and (min-width:$largeur__mobile) and (max-width:$largeur__bureau) {
+    .recherche{
+        transform: scale(0.75) translateX(-25%) translateY(-10px);
+    }
+
+    .recherche__bouton{
+        border-radius: 50%;
+        transform: scale(2);
+    }
+}
+
+//////////////////////////////////// Bureau ////////////////////////////////////
+@media screen and (min-width:$largeur__bureau) {
+    .recherche__bouton{
+        transform: scale(1.5);
+    }
+}

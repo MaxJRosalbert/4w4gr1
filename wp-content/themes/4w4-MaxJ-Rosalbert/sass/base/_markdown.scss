@@ -4,11 +4,11 @@ ol {
     padding : 7px;
     color : #444;
     list-style-type : none;
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: $largeur__mobile) {
         margin : 1rem .5rem; 
         padding : 0 13px;
       }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: $largeur__tablette) {
         margin : 1rem .5rem; 
         padding : 0 15px;
     }
@@ -58,4 +58,23 @@ hr {}
 
 blockquote{
 
+}
+
+//////////////////////////////////// MOBILE ////////////////////////////////////
+@media screen and (max-width:$largeur__mobile) {
+
+}
+
+/////////////////////////////////// TABLETTE ///////////////////////////////////
+@media screen and (min-width:$largeur__mobile) {
+    
+}
+
+@media screen and (max-width:$largeur__bureau) {
+    
+}
+
+//////////////////////////////////// Bureau ////////////////////////////////////
+@media screen and (min-width:$largeur__bureau){
+    
 }

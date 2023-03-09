@@ -54,7 +54,7 @@ Mise en page générale avec display:grid
       "main"
       "footer";
     row-gap: 50px;
-    @media screen and (min-width:992px) {
+    @media screen and (min-width:$largeur__bureau) {
         grid-template-columns: 20% auto; 
         grid-template-areas:
         "header header"
@@ -68,7 +68,7 @@ Mise en page générale avec display:grid
     "header"
     "main"
     "footer";
-    @media screen and (min-width:992px) {
+    @media screen and (min-width:$largeur__bureau) {
         grid-template-columns: auto; 
         grid-template-areas:
         "header"
