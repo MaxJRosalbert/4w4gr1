@@ -1,16 +1,16 @@
 /*
-Theme Name: 4w4 MaxJ Rosalbert
-Theme URI: https://github.com/MaxJRosalbert/2023-4w4-gr1
-Author: MaxJ Rosalbert
-Version : 1.0.0
-Author URI: https://wordpress.org/
-Description: Thème réalisé dans le cours 4w4
+Theme Name       : 4w4 MaxJ Rosalbert
+Theme URI        : https: //github.com/MaxJRosalbert/2023-4w4-gr1
+Author           : MaxJ Rosalbert
+Version          : 1.0.0
+Author URI       : https: //wordpress.org/
+Description      : Thème réalisé dans le cours 4w4
 Requires at least: 1.0
-Tested up to: 6.1.1
-Requires PHP: 7.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-MaxJ-Rosalbert
+Tested up to     : 6.1.1
+Requires PHP     : 7.0
+License          : GNU General Public License v2 or later
+License URI      : http : //www.gnu.org/licenses/gpl-2.0.html
+Text Domain      : 4w4-MaxJ-Rosalbert
 */
   
 @import "variable/dimension";
@@ -28,6 +28,7 @@ Text Domain: 4w4-MaxJ-Rosalbert
  @import "composant/entete";
  @import "composant/blocflex";
  @import "composant/recherche";
-
+ @import "composant/menu_cours";
+ 
  /* --------------------------------------------- layout */
  @import "layout/aside-contenu";

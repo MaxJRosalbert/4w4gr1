@@ -28,6 +28,7 @@ add_theme_support( 'custom-logo', array(
     'height' => 150,
     'width'  => 150
 ) );
+add_theme_support('custom-background');
 
 
 /**
@@ -60,7 +61,9 @@ function perso_menu_item_title($title, $item, $args) {
         // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
         if($args->menu == 'cours') { // on filtre uniquement le menu «cours»
         // Modifier la longueur du titre en fonction de nos besoins
-        $title = wp_trim_words($title, 1, ' ... '); // A modifier améliorer pour le tp1
+        $sigle = substr($title,4,3);
+        $title = substr($title,7);
+        $title = "<code>" . $sigle. "</code>" . "<p>" . wp_trim_words($title, 1, ' ... ') . "</p>"; // A modifier améliorer pour le tp1
         }
         return $title;
         }
