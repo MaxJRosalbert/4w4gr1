@@ -39,28 +39,27 @@ article:hover{
     }
 }
 
-.main__sigle > article:hover{
-    background-color: var(--OrangeSombre);
-} 
-
 .blocflex__galerie{
     flex: 1 0 100%;
-    // width: 100%;
 }
 
 main{
     width: 90%;
     margin: auto;
-    background-color: var(--OrangeClassique);
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
 
 }
-
-.main__sigle > article{
-    width: 90%;
-    margin: auto;
+.main__sigle {
+    article{
+        width: 90%;
+        margin: auto;
+    }   
+    article:hover{
+        background-color: var(--OrangeSombre);
+    } 
 }
+
 
 //////////////////////////////////// MOBILE ////////////////////////////////////
 @media screen and (max-width:$largeur__mobile) {

@@ -1,0 +1,69 @@
+        #checkbox2{
+            display: none;
+        }
+    
+        .menu-burger{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .hamburger {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+        }
+    
+        .hamburger .bar {
+            padding: 0;
+            width: 30px;
+            height: 4px;
+            background-color: maroon;
+            display: block;
+            border-radius: 4px;
+            transition: all 0.4s ease-in-out;
+            position: absolute; 
+        }
+    
+        .bar1 {
+            top: 0;
+        }
+    
+        .bar2,
+        .bar3 {
+            top: 13.5px;
+        }
+    
+        .bar3 {
+            right: 0;
+        }
+    
+        .bar4 {
+            bottom: 0;
+        }
+    
+        .checkbox2:checked + label > .hamburger2 > .bar1{
+            transform: translateX(40px);
+            background-color: transparent;
+        }
+    
+        .checkbox2:checked + label > .hamburger2 > .bar2{
+            transform: rotate(45deg);
+        }
+    
+        .checkbox2:checked + label > .hamburger2 > .bar3{
+            transform: rotate(-45deg);
+        }
+    
+        .checkbox2:checked + label > .hamburger2 > .bar4{
+            transform: translateX(-40px);
+            background-color: transparent;
+        }
+
+
+@media screen and (min-width:$largeur__tablette) {
+    .menu-burger{
+        display: none;
+    }
+}

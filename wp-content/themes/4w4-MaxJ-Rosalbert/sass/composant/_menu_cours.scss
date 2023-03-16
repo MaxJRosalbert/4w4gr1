@@ -1,34 +1,39 @@
-.menu-cours-container{
-    .menu{
-        display: flex;
+.menu-cours-container{ // nav
+
+    .menu{ // ul
+        display : flex;
         flex-direction: row;
-        @media screen and(min-width:$largeur__bureau){
+        flex-wrap: wrap;
+        @media screen and (min-width:$largeur__bureau) {
             flex-direction: column;
+            justify-content: flex-start;
         }
-        .menu-item{
-            flex: 1 0 40px;
-            a{
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
-                padding: 10px;
+
+    .menu-item{ // li
+        flex: 1 0 40px;
+        a{
+            display : flex;
+            flex-direction: row; 
+            justify-content: flex-start;
+            align-items: center;
+            padding : 10px;
+            
+            @media screen and (min-width:$largeur__bureau) {
 
 
-                @media screen and(min-width:$largeur__bureau) {
-                    align-items: flex-start;
-                    flex-wrap: nowrap;
-                }
-                code{
+               justify-content: flex-start;
+               flex-wrap: nowrap;
 
-                }
-                p{
-                    display: none;
-                    @media screen and(min-width:$largeur__bureau){
-                        display: block;
-                    }
-                }
             }
-        }
-    }
-}
+            code{}
+            p{
+                display : none;
+                @media screen and (min-width:$largeur__bureau) {
+                    display: block;
+                    padding : 10px;
+            } // p 
+            } 
+        } //a 
+    } //// .menu-item   
+} // .menu
+} //.menu-cours-container
