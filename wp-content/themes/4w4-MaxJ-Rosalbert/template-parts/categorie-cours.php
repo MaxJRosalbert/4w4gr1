@@ -7,7 +7,8 @@
     $titre = get_the_title();
     $sigle = substr($titre, 0, 7);
     $titre_long = substr($titre, 7, -5);
-    $duree = "90";
+    $duree = substr($titre, strpos($titre,'('));
+    
 ?>
 <article class="blocflex__cours">
     <h5><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h5>

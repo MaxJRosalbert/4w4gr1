@@ -5,6 +5,9 @@
      *
      */
     $titre = get_the_title();
+    if (substr($titre,0,1) == 0) {
+        substr($titre,1);
+    }
     // 
     // if (substr($titre,0,1) == 0) { }
 ?>
