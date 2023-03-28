@@ -24,10 +24,9 @@ ol {
 }
 
 
-
-ul {
-
-}
+/*
+ul {}
+*/
 
 ul li, 
 ol li {
@@ -59,15 +58,13 @@ pre {
     color : #eee;
     overflow-x: scroll;
 }
+
+/**
 code {}
-
 strong{}
-
 hr {}
-
-blockquote{
-
-}
+blockquote{}
+**/
 
 //////////////////////////////////// MOBILE ////////////////////////////////////
 @media screen and (max-width:$largeur__mobile) {

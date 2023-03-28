@@ -403,6 +403,9 @@ ol {
   }
 }
 
+/*
+ul {}
+*/
 ul li,
 ol li {
   margin: 0.5rem 0rem;
@@ -430,6 +433,12 @@ pre {
   overflow-x: scroll;
 }
 
+/**
+code {}
+strong{}
+hr {}
+blockquote{}
+**/
 /* --------------------------------------------- composant */
 .site {
   background-color: var(--bleuClassique);
@@ -661,7 +670,7 @@ ul li li::before {
     border-radius: 30px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    background-color: var(--OrangeSombre);
+    background-color: var(--OrangeClassique);
     padding: 5px 5px;
     color: aliceblue;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
