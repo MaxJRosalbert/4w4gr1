@@ -88,3 +88,16 @@
         transform: scale(1.5);
     }
 }
+
+
+///////////////////////////////////// 404 ///////////////////////////////////////
+
+.recherche404{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .recherche{
+        justify-content: center;
+        transform: scale(1.5) translateX(0) translateY(0);
+    }
+}

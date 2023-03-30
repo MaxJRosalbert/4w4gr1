@@ -695,7 +695,7 @@ ul li li::before {
   --ombrePortee: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
 }
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
@@ -840,6 +840,16 @@ main {
     transform: scale(1.5);
   }
 }
+.recherche404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recherche404 .recherche {
+  justify-content: center;
+  transform: scale(1.5) translateX(0) translateY(0);
+}
+
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;
@@ -957,7 +967,7 @@ Mise en page générale avec display:grid
 .site__main {
   grid-area: main;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(144, 177, 218);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .site__footer {
