@@ -68,6 +68,13 @@
     border-radius: 50%;
     transform: scale(2);
     }
+
+    // .recherche404{
+    //     .recherche{
+    //         transform: scale(0.5);
+    //     }
+    
+    // }
 }
 
 /////////////////////////////////// TABLETTE ///////////////////////////////////
@@ -98,6 +105,8 @@
     justify-content: center;
     .recherche{
         justify-content: center;
-        transform: scale(1.5) translateX(0) translateY(0);
+        @media screen and (min-width:$largeur__bureau) {
+            transform: scale(1.5) translateX(0) translateY(0);
+        }
     }
 }

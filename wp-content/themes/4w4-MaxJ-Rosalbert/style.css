@@ -843,7 +843,11 @@ main {
 }
 .recherche404 .recherche {
   justify-content: center;
-  transform: scale(1.5) translateX(0) translateY(0);
+}
+@media screen and (min-width: 1024px) {
+  .recherche404 .recherche {
+    transform: scale(1.5) translateX(0) translateY(0);
+  }
 }
 
 .menu-cours-container .menu {
@@ -983,7 +987,11 @@ Mise en page générale avec display:grid
 .site__main {
   grid-area: main;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-image: url(http://localhost:8000/4w4gr1/wp-content/uploads/2023/03/20220605_100346.jpg);
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
 }
 
 .site__footer {

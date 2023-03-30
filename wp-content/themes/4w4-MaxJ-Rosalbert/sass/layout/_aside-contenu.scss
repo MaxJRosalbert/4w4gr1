@@ -18,7 +18,12 @@ Mise en page générale avec display:grid
     grid-area: main;
     padding: 1rem clamp(1rem, 3vw, 20rem);
     // background-color: rgb(144, 177, 218);
-    background-color: rgba(255,255,255, .8);
+    background-image: url(http://localhost:8000/4w4gr1/wp-content/uploads/2023/03/20220605_100346.jpg);
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-color: rgba(255,255,255, $alpha: 9.0);
 
 }
 
