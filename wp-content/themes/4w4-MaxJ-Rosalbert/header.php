@@ -8,7 +8,7 @@
     
     <?php wp_head(); ?>
 </head>
-<body class="custom-background site <?php echo(is_front_page()?"no-aside":"")?>">
+<body class="custom-background site <?php echo(is_front_page()?"no-aside":"")?> <?php echo(is_404()?"no-aside":"")?>">
     <header class="site__entete">
         <section class="entete__nav">
             <?php the_custom_logo(); ?> 
