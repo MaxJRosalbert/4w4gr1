@@ -440,10 +440,6 @@ hr {}
 blockquote{}
 **/
 /* --------------------------------------------- composant */
-.site {
-  background-color: var(--bleuClassique);
-}
-
 .site__titre {
   text-decoration: none;
 }
@@ -955,11 +951,31 @@ main {
     display: none;
   }
 }
+.menu404 {
+  display: flex;
+}
+.menu404 .menu-cours-container .menu, .menu404 .menu-notes-4w4-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menu404 .menu-cours-container .menu .menu-item a, .menu404 .menu-notes-4w4-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
 
 */
+.site {
+  background-color: rgb(103, 172, 209);
+}
+
 .site__entete {
   grid-area: header;
 }
@@ -967,7 +983,7 @@ Mise en page générale avec display:grid
 .site__main {
   grid-area: main;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .site__footer {

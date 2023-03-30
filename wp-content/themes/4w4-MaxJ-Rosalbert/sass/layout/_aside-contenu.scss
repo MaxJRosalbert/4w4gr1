@@ -2,7 +2,10 @@
 Mise en page générale avec display:grid
 
 */
-
+.site {
+    // background-color: var(--bleuClassique);
+    background-color: rgba(103, 172, 209, $alpha: 8.0);
+}
 
 
 .site__entete {
@@ -15,7 +18,7 @@ Mise en page générale avec display:grid
     grid-area: main;
     padding: 1rem clamp(1rem, 3vw, 20rem);
     // background-color: rgb(144, 177, 218);
-    background-color: rgba(255,255,255, .6);
+    background-color: rgba(255,255,255, .8);
 
 }
 

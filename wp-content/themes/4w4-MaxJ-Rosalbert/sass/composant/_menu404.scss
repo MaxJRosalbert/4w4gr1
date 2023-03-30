@@ -1,0 +1,25 @@
+.menu404{
+    // height: 20vh;
+    display: flex;
+    .menu-cours-container, .menu-notes-4w4-container{ // nav
+
+        .menu{ // ul
+            display : flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+        .menu-item{ // li
+            // flex: 1 0 20px;
+            a{
+                display : flex;
+                flex-direction: row; 
+                justify-content: flex-start;
+                align-items: center;
+                padding : 10px;
+                
+            } //a 
+        } //// .menu-item   
+    } // .menu
+    }
+}
+
