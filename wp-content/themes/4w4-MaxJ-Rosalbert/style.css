@@ -980,6 +980,15 @@ Mise en page générale avec display:grid
   background-color: rgb(103, 172, 209);
 }
 
+.fondOpaque {
+  width: 100vw;
+  height: 105vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(132, 133, 137, 0.42);
+}
+
 .site__entete {
   grid-area: header;
 }
@@ -987,17 +996,15 @@ Mise en page générale avec display:grid
 .site__main {
   grid-area: main;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-image: url(http://localhost:8000/4w4gr1/wp-content/uploads/2023/03/20220605_100346.jpg);
-  background-position: left top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(103, 172, 209, 0.85);
+  z-index: 2;
 }
 
 .site__footer {
   grid-area: footer;
   padding: 1rem clamp(1rem, 3vw, 20rem);
   background-color: rgb(10, 42, 80);
+  z-index: 2;
 }
 
 .site__aside {
