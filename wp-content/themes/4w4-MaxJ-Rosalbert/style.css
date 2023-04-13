@@ -977,7 +977,7 @@ Mise en page générale avec display:grid
 
 */
 .site {
-  background-color: rgb(103, 172, 209);
+  background-color: var(--bleuClassique);
 }
 
 .fondOpaque {
@@ -986,7 +986,6 @@ Mise en page générale avec display:grid
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: rgba(132, 133, 137, 0.42);
 }
 
 .site__entete {
@@ -996,7 +995,7 @@ Mise en page générale avec display:grid
 .site__main {
   grid-area: main;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgba(103, 172, 209, 0.85);
+  background-color: rgba(170, 170, 170, 0.15);
   z-index: 2;
 }
 

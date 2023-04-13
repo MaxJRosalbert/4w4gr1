@@ -1,0 +1,20 @@
+.carrousel {
+    width: 50%;
+    height : 50%;
+    position : fixed;
+    left : 25%;
+    top:25%;
+    border: 1px solid #444;
+    background-color: rgb(50, 232, 238);
+    transform : scale(0);
+    transition : transform .5s;
+    
+}
+
+.carrousel--active{
+    transform : scale(1);
+}
+
+@media screen and (min-width:$largeur__mobile) {
+    
+}
