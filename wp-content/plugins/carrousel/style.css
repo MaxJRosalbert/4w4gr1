@@ -10,6 +10,25 @@
   transition: transform 0.5s;
 }
 
+.carrousel__x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.carrousel__figure {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carrousel__figure img {
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+}
+
 .carrousel--active {
   transform: scale(1);
 }/*# sourceMappingURL=style.css.map */

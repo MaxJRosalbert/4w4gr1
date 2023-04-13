@@ -45,7 +45,9 @@ article:hover{
 
 main{
     width: 90%;
-    margin: auto;
+    // margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
 

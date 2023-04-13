@@ -2,14 +2,19 @@
     // height: 20vh;
     display: flex;
     .menu-cours-container, .menu-notes-4w4-container{ // nav
+        background-color: #f0ffff5e;
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
 
+        code, p{
+            // font-size: small;
+        }
         .menu{ // ul
             display : flex;
             flex-direction: row;
             flex-wrap: wrap;
     
         .menu-item{ // li
-            // flex: 1 0 20px;
+            flex: 1 0 20px;
             a{
                 display : flex;
                 flex-direction: row; 

@@ -506,6 +506,8 @@ ul li li::before {
   background-color: var(--OrangeClassique);
   border-radius: 0 0 15px 15px;
   transform: scaleY(0);
+  margin-right: 5%;
+  margin-left: 5%;
 }
 .menu__entete .menu {
   display: flex;
@@ -727,7 +729,8 @@ article:hover h5 {
 
 main {
   width: 90%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -958,10 +961,17 @@ main {
 .menu404 {
   display: flex;
 }
+.menu404 .menu-cours-container, .menu404 .menu-notes-4w4-container {
+  background-color: rgba(240, 255, 255, 0.368627451);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
 .menu404 .menu-cours-container .menu, .menu404 .menu-notes-4w4-container .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.menu404 .menu-cours-container .menu .menu-item, .menu404 .menu-notes-4w4-container .menu .menu-item {
+  flex: 1 0 20px;
 }
 .menu404 .menu-cours-container .menu .menu-item a, .menu404 .menu-notes-4w4-container .menu .menu-item a {
   display: flex;
