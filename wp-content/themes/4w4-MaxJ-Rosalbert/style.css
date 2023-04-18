@@ -629,50 +629,19 @@ ul li li::before {
 }
 @media screen and (min-width: 1024px) {
   .entete__nav {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: auto;
-    width: 95vw;
     height: 10vh;
-    border-radius: 0 0 15px 15px;
     padding: 0 25px;
-    z-index: 2;
-    background-color: var(--OrangeClassique);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   }
   .menu__entete {
     position: initial;
-    z-index: 3;
-    list-style: none;
     width: 100%;
   }
   .menu__entete .menu {
-    display: flex;
     width: 90%;
-    list-style-type: none;
     justify-content: space-around;
   }
   .menu__entete .menu .menu-item a {
-    border-radius: 30px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    background-color: var(--OrangeSombre);
     padding: 5px 5px;
-    color: aliceblue;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: small;
-  }
-  .menu__entete .menu .menu-item a:hover {
-    transition: all 0.25s;
-    color: var(--bleuClassique);
-  }
-  .menu__entete .menu .menu-item a:focus {
-    transition: all 0.5s;
-    box-shadow: none;
   }
 }
 /* CSS */

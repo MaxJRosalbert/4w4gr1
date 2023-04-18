@@ -206,68 +206,41 @@
 
 //////////////////////////////////// Bureau ////////////////////////////////////
 @media screen and (min-width:$largeur__bureau) {
-
-    // .custom-logo-link{
-    //     display: flex;
-    //     align-items: center;
-    //     z-index: 1;
-    // }
-    // .custom-logo{
-    //     width: 40%;
-    //     height: 40%;
-
-    // }
-
     .entete__nav{
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin: auto;
-        width: 95vw;
+        // display: flex;
+        // position: relative;
+        // flex-direction: row;
+        // flex-wrap: nowrap;
+        // align-items: center;
+        // margin: auto;
+        // width: 95vw;
         height: 10vh;
-        border-radius: 0 0 15px 15px;
+        // border-radius: 0 0 15px 15px;
         padding: 0 25px;
-        z-index: 2;
-        background-color: var(--OrangeClassique);
-        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
+        // z-index: 2;
+        // background-color: var(--OrangeClassique);
+        // box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
+
     }
 
     .menu__entete{ //nav
         position: initial;
-        z-index: 3;
-        list-style: none;
         width: 100%;
         .menu{ //ul
-            display: flex;
             width: 90%;
-            list-style-type: none;
             justify-content: space-around;
             .menu-item{ //li
                 a{
-                    border-radius: 30px;
-                    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
-                    text-decoration: none;
-                    background-color: var(--OrangeSombre);
                     padding: 5px 5px;
-                    color: aliceblue;
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    font-weight: bold;
-                    font-size: small;
                 }
-                a:hover{
-                    transition: all 0.25s;
-                    color: var(--bleuClassique);
-                }
-                a:focus{
-                    transition: all 0.5s;
-                    box-shadow: none;
-                }
+                a:hover{}
+                a:focus{}
             }    
         }
     }
 }
+
+
 
 /* CSS */
 // .button-72 {

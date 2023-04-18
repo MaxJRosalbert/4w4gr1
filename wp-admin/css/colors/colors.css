@@ -683,30 +683,22 @@ div#wp-responsive-toggle a:before {
 
 [class*=welcome-panel-icon] {
   background-color: rgba(255, 255, 255, 0.5);
-}/*# sourceMappingURL=colors.css.map */over, .wp-core-ui.wp-customizer .theme-overlay .theme-header .right:focus, .wp-core-ui.wp-customizer .theme-overlay .theme-header .right:hover, .wp-core-ui.wp-customizer .theme-overlay .theme-header .left:focus, .wp-core-ui.wp-customizer .theme-overlay .theme-header .left:hover {
-  border-bottom-color: #04a4cc;
+}/*# sourceMappingURL=colors.css.map */wp-core-ui .wp-full-overlay .collapse-sidebar:focus .collapse-sidebar-arrow {
+  box-shadow: 0 0 0 1px #e59e66, 0 0 2px 1px #dd823b;
+}
+.wp-core-ui.wp-customizer .theme-overlay .theme-header .close:focus, .wp-core-ui.wp-customizer .theme-overlay .theme-header .close:hover, .wp-core-ui.wp-customizer .theme-overlay .theme-header .right:focus, .wp-core-ui.wp-customizer .theme-overlay .theme-header .right:hover, .wp-core-ui.wp-customizer .theme-overlay .theme-header .left:focus, .wp-core-ui.wp-customizer .theme-overlay .theme-header .left:hover {
+  border-bottom-color: #dd823b;
   color: #0073aa;
 }
 
 /* Welcome Panel */
 .welcome-panel {
-  background-color: #04a4cc;
+  background-color: #dd823b;
 }
 
 .welcome-panel-header-image circle {
   stroke: rgba(255, 255, 255, 0.5);
-  fill: #04a4cc;
-}
-
-[class*=welcome-panel-icon] {
-  background-color: #333;
-}
-
-/* Override the theme filter highlight color for this scheme */
-.theme-section.current,
-.theme-filter.current {
-  border-bottom-color: #04a4cc;
-}/*# sourceMappingURL=colors.css.map */map */fill: #dd823b;
+  fill: #dd823b;
 }
 
 [class*=welcome-panel-icon] {
