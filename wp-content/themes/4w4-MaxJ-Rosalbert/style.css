@@ -628,15 +628,6 @@ ul li li::before {
   }
 }
 @media screen and (min-width: 1024px) {
-  .custom-logo-link {
-    display: flex;
-    align-items: center;
-    z-index: 1;
-  }
-  .custom-logo {
-    width: 40%;
-    height: 40%;
-  }
   .entete__nav {
     display: flex;
     position: relative;
@@ -684,6 +675,7 @@ ul li li::before {
     box-shadow: none;
   }
 }
+/* CSS */
 :root {
   --bleuSombre: rgb(0, 39, 72);
   --bleuClassique: rgb(103, 172, 209);
