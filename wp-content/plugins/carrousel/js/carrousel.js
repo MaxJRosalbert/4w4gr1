@@ -10,7 +10,7 @@
     /**---------------------- Variable de la galerie ------------------------ */
     let galerie = document.querySelector(".galerie");
     let galerie__img = galerie.querySelectorAll("img")
-    // console.log(galerie__img.length);
+    console.log(galerie__img.length);
     //console.log(carrousel.tagName);
     /*---------------------- Positionnement de la class active --------------------- */
     let index = 0;
@@ -21,7 +21,15 @@
     bouton.addEventListener('mousedown',function(){
         console.log('ouvrir la boite');
         carrousel.classList.add('carrousel--active')
+
+
         ajouter_img_dans_carrousel()
+        
+        console.log(galerie__img.length);
+        console.log(carrousel__figure.length);
+        console.log(carrousel__form.length);
+        console.log(galerie.length);
+    
 
         
     /* https://developer.mozilla.org/en-US/docs/Web/API/Element/classList 
@@ -29,7 +37,10 @@
     propriété clasList.contain('carrousel--activer') permet de vérifier si  le carrousel est ouvert
     */
 
+
     })
+
+    
 
 /************************** FERMER LA BOITE MODALE *********************/
     carrousel__x.addEventListener('mousedown',function(){
@@ -94,10 +105,15 @@
     if (ancien_index != -1){
         // carrousel__figure.children[ancien_index].style.opacity = 0  
         carrousel__figure.children[ancien_index].classList.remove('carrousel__img--activer')
+        // form.children[ancien_index].checked
        }
        // carrousel__figure.children[index].style.opacity = 1
        carrousel__figure.children[index].classList.add('carrousel__img--activer')
        ancien_index = index
  }
+
+ /**
+  * 
+  */
 
 })()
