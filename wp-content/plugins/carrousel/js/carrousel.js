@@ -36,10 +36,16 @@
     
     propriété clasList.contain('carrousel--activer') permet de vérifier si  le carrousel est ouvert
     */
+        console.log( "rouge", carrousel.classList.contain('carrousel--activer'));
 
 
     })
 
+    galerie.addEventListener('mousedown',function(){
+        console.log('ouvrir la boite');
+
+
+    })
     
 
 /************************** FERMER LA BOITE MODALE *********************/
@@ -75,15 +81,16 @@
  function creation_img_carrousel(elm){
         // console.log(elm.getAttribute('src'))
         let img = document.createElement('img')
+        // img.setAttribute('src', elm.getAttribute('src'))
         img.src = elm.src
         img.classList.add("carrousel__img")
-        // img.setAttribute('src', elm.getAttribute('src'))
         // console.log(img.getAttribute('src'));
         carrousel__figure.appendChild(img)
  }
 /**
  * Création d'un radio-bouton
  */
+
  function creation_radio_carrousel(){
     let rad = document.createElement('input')
     rad.setAttribute('type', 'radio')
@@ -101,19 +108,27 @@
  }
 
  function afficher_image(index){
-    
-    if (ancien_index != -1){
-        // carrousel__figure.children[ancien_index].style.opacity = 0  
-        carrousel__figure.children[ancien_index].classList.remove('carrousel__img--activer')
-        // form.children[ancien_index].checked
-       }
-       // carrousel__figure.children[index].style.opacity = 1
-       carrousel__figure.children[index].classList.add('carrousel__img--activer')
-       ancien_index = index
- }
 
- /**
-  * 
+    if (ancien_index != -1){
+     // carrousel__figure.children[ancien_index].style.opacity = 0  
+     carrousel__figure.children[ancien_index].classList.remove('carrousel__img--activer')
+     //carrousel__form.children[ancien_index].checked 
+    }
+    // carrousel__figure.children[index].style.opacity = 1
+    carrousel__figure.children[index].classList.add('carrousel__img--activer')
+    ancien_index = index
+
+    // console.log(carrousel.classList.contain('carrousel--activer'));
+    
+
+
+  }
+  
+  /*
+  permet de vérifier si la classe « carrousel--activer » 
+  se trouve dans la liste des classe carrousel
+    carrousel.classList.contain('carrousel--activer')
+    mdn classList.contain()
   */
 
 })()
