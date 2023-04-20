@@ -1,0 +1,26 @@
+.site__footer{
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "widget1 widget2 widget3"
+      "cntFter cntFter cntFter";
+    gap: 50px;
+
+    .footer_1{
+        grid-area: widget1;
+    }
+    
+    .footer_2{
+        grid-area: widget2;
+    }
+    
+    .footer_3{
+        grid-area: widget3;
+    }
+    
+    .contenu_footer{
+        grid-area: cntFter;
+    }
+
+}
