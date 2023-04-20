@@ -22,6 +22,13 @@
         console.log('ouvrir la boite');
         carrousel.classList.add('carrousel--active')
         ajouter_img_dans_carrousel()
+
+        
+    /* https://developer.mozilla.org/en-US/docs/Web/API/Element/classList 
+    
+    propriété clasList.contain('carrousel--activer') permet de vérifier si  le carrousel est ouvert
+    */
+
     })
 
 /************************** FERMER LA BOITE MODALE *********************/
@@ -75,7 +82,6 @@
     // position = position + 1 incrémentation de 1
     position++
     carrousel__form.appendChild(rad)
-
     rad.addEventListener('mousedown', function(){
         console.log(this.dataset.index);
         index = this.dataset.index
