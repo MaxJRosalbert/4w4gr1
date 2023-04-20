@@ -8,6 +8,10 @@
 	
 - La **réouverture de la boîte modale** ne recopie pas les images dans le carrousel.
 
+- Max-Joseph Rosalbert
+
+- https://github.com/MaxJRosalbert/4w4gr1Carrousel/tree/Exercice2
+
 ### Barème 
 - Github: 10 commits, readme, lien vers votre site siteground, messages préfixés explicites (2 points)
 - Fonctionnalités etDesign (3 points)
