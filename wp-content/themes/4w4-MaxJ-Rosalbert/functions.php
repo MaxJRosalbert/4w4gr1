@@ -28,6 +28,10 @@ add_theme_support( 'custom-logo', array(
     'height' => 150,
     'width'  => 150
 ) );
+
+/**
+ * Permet d'utiliser la fonction image en arrière plan dans 'Personnalisé'
+ */
 add_theme_support('custom-background');
 
 

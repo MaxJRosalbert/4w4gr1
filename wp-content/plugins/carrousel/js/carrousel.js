@@ -23,6 +23,7 @@
         carrousel.classList.add('carrousel--active')
         ajouter_img_dans_carrousel()
     })
+    
 
 /************************** FERMER LA BOITE MODALE *********************/
     carrousel__x.addEventListener('mousedown',function(){
@@ -80,6 +81,7 @@
         console.log(this.dataset.index);
         index = this.dataset.index
         afficher_image(index)
+        
     })
  }
 
