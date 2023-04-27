@@ -1,0 +1,18 @@
+.menu-evenement-container{
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+            a{
+                text-decoration: none;
+                font-size: x-large;
+                font-weight: bold;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

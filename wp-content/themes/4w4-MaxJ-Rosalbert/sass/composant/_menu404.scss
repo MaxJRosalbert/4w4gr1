@@ -1,3 +1,70 @@
+/*
+*
+main.erreur404 {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    .recherche {
+        font-size: 3rem;
+        margin: 2rem 0;
+        input {
+            font-size: 3.5rem;
+            border-right: 2px dotted #000;
+        }
+    }
+}
+
+.erreur404__titre, .erreur404__soustitre {
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    color: #d31616;
+    text-align: center !important;
+}
+.erreur404__soustitre {
+    font-size: 2rem; 
+}
+
+.erreur__404__menu { // nav
+  .menu { // ul
+    display :flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+li {
+    margin:0;
+}
+
+   a{
+    display :flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    color : #1a6bc1;
+    margin: 5px 20px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    code,p{
+        display : block;
+       font-size: 1.5rem; 
+       font-weight: bold;
+       margin: 0 5px;
+    }
+    p { display: none;}
+
+    
+    @media screen and (min-width:1000px) {
+        p { display: block;}
+    }
+    
+   }
+    
+}
+*/
+
 .menu404{
     // height: 20vh;
     display: flex;
@@ -27,4 +94,3 @@
     } // .menu
     }
 }
-

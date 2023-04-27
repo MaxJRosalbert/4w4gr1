@@ -22,7 +22,7 @@ h1, h2{
 article{
     width: 25%;
     padding: 5px;
-    border: 1px solid #aaa;
+    border: 2px solid #aaa;
     background-color: var(--OrangeSombre);
     box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
     border-radius: 15px 15px 15px 15px;
@@ -39,9 +39,21 @@ article:hover{
     }
 }
 
+.blocflex__figure{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    img{
+        display: block;
+        width: 150px;
+    }
+}
+
 .blocflex__galerie{
     flex: 1 0 100%;
 }
+
 
 main{
     width: 90%;
@@ -64,12 +76,12 @@ main{
 
 
 //////////////////////////////////// MOBILE ////////////////////////////////////
-@media screen and (max-width:$largeur__mobile) {
+@media screen and (min-width:$largeur__mobile) {
 
 }
 
 /////////////////////////////////// TABLETTE ///////////////////////////////////
-@media screen and (min-width:$largeur__mobile) {
+@media screen and (min-width:$largeur__tablette) {
     
 }
 

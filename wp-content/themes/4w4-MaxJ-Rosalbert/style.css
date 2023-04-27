@@ -522,23 +522,34 @@ ul li li::before {
   width: 100%;
 }
 .menu__entete .menu .menu-item a {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 30px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  text-decoration: none;
   background-color: var(--OrangeSombre);
-  padding: 5px 5px;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   color: aliceblue;
+  cursor: pointer;
+  display: flex;
+  font-family: Quicksand, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
   font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: large;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px, rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px, rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
 }
 .menu__entete .menu .menu-item a:hover {
   transition: all 0.5s;
   box-shadow: none;
   font-size: larger;
+  color: var(--bleuClassique);
 }
 .menu__entete .menu .menu-item::before {
   content: "";
@@ -556,6 +567,8 @@ ul li li::before {
 
 @media screen and (min-width: 768px) {
   .custom-logo-link {
+    display: flex;
+    align-items: center;
     justify-content: end;
     transform: translateX(-55%);
     z-index: 1;
@@ -565,10 +578,19 @@ ul li li::before {
     height: 40%;
   }
   .entete__nav {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-between;
+    margin: auto;
     width: 95vw;
     height: 12vh;
+    border-radius: 0 0 15px 15px;
     z-index: 2;
+    background-color: var(--OrangeClassique);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   }
   .menu__entete {
     transform-origin: center;
@@ -583,20 +605,18 @@ ul li li::before {
     right: 0;
   }
   .menu__entete .menu {
+    display: flex;
     flex-direction: row;
     position: absolute;
     right: 0;
     list-style-type: none;
     justify-content: flex-end;
+    align-items: center;
+    margin: auto;
     height: 95%;
   }
   .menu__entete .menu .menu-item {
     padding-left: 2%;
-  }
-  .menu__entete .menu .menu-item a {
-    padding: 3px 5px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: small;
   }
   .menu__entete .menu .menu-item a:hover {
     transition: all 0.25s;
@@ -647,7 +667,7 @@ h1, h2 {
 article {
   width: 25%;
   padding: 5px;
-  border: 1px solid #aaa;
+  border: 2px solid #aaa;
   background-color: var(--OrangeSombre);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px 15px 15px 15px;
@@ -662,6 +682,16 @@ article:hover {
 article:hover h5 {
   font-style: oblique;
   font-size: xx-large;
+}
+
+.blocflex__figure {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.blocflex__figure img {
+  display: block;
+  width: 150px;
 }
 
 .blocflex__galerie {
@@ -899,6 +929,72 @@ main {
     display: none;
   }
 }
+/*
+*
+main.erreur404 {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    .recherche {
+        font-size: 3rem;
+        margin: 2rem 0;
+        input {
+            font-size: 3.5rem;
+            border-right: 2px dotted #000;
+        }
+    }
+}
+
+.erreur404__titre, .erreur404__soustitre {
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    color: #d31616;
+    text-align: center !important;
+}
+.erreur404__soustitre {
+    font-size: 2rem; 
+}
+
+.erreur__404__menu { // nav
+  .menu { // ul
+    display :flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+li {
+    margin:0;
+}
+
+   a{
+    display :flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    color : #1a6bc1;
+    margin: 5px 20px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    code,p{
+        display : block;
+       font-size: 1.5rem; 
+       font-weight: bold;
+       margin: 0 5px;
+    }
+    p { display: none;}
+
+
+    @media screen and (min-width:1000px) {
+        p { display: block;}
+    }
+
+   }
+
+}
+*/
 .menu404 {
   display: flex;
 }
