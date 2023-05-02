@@ -13,8 +13,8 @@
     console.log(galerie__img.length);
     //console.log(carrousel.tagName);
     /*---------------------- Positionnement de la class active --------------------- */
-    let index = 0;
-    let ancien_index = -1 ;
+    let index = 0; //permet d'identifier l'image courante du carrousel
+    let ancien_index = -1 ; //permet d'identifier l'image précedente
     let position = 0 // Permet d'indexer les images de galerie et
 
 /************************** OUVRIR LA BOITE MODALE *********************/
@@ -36,15 +36,15 @@
     
     propriété clasList.contain('carrousel--activer') permet de vérifier si  le carrousel est ouvert
     */
-        console.log( "rouge", carrousel.classList.contain('carrousel--activer'));
+        // console.log( "rouge", carrousel.classList.contain('carrousel--activer'));
 
 
     })
 
     galerie.addEventListener('mousedown',function(){
         console.log('ouvrir la boite');
-
-
+        carrousel.classList.add('carrousel--active')
+        ajouter_img_dans_carrousel()
     })
     
 
