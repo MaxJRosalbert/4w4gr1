@@ -16,14 +16,17 @@
     let index = 0; //permet d'identifier l'image courante du carrousel
     let ancien_index = -1 ; //permet d'identifier l'image précedente
     let position = 0 // Permet d'indexer les images de galerie et
-
+    /**
+     * Permet de créer le carrousel en parcourrant la galerie d'image
+     */
+    ajouter_img_dans_carrousel()
 /************************** OUVRIR LA BOITE MODALE *********************/
     bouton.addEventListener('mousedown',function(){
         console.log('ouvrir la boite');
         carrousel.classList.add('carrousel--active')
 
 
-        ajouter_img_dans_carrousel()
+        
         
         console.log(galerie__img.length);
         console.log(carrousel__figure.length);
@@ -61,22 +64,22 @@
  * ajouter_img_dans_carrousel
  * Ajouter l'ensemble des images de la galerie dans la boite modale carrousel 
  */
- function ajouter_img_dans_carrousel()
- {
+function ajouter_img_dans_carrousel()
+{
 
-    for (const elm of galerie__img)
-    {
-      elm.dataset.index = position
-      elm.addEventListener('mousedown',function(){
-        index = this.dataset.index
-        afficher_image(index)
-        console.log(index)
-      })
-  
-      creation_img_carrousel(elm)
-      creation_radio_carrousel()
-    }
- }
+  for (const elm of galerie__img)
+  {
+    elm.dataset.index = position
+    elm.addEventListener('mousedown',function(){
+      index = this.dataset.index
+      afficher_image(index)
+      console.log(index)
+    })
+
+    creation_img_carrousel(elm)
+    creation_radio_carrousel()
+  }
+}
 
  function creation_img_carrousel(elm){
         // console.log(elm.getAttribute('src'))
