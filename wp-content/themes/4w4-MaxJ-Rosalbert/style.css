@@ -1018,6 +1018,46 @@ li {
   padding: 10px;
 }
 
+.menu-evenement-container .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-evenement-container .menu li a {
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+}
+.menu-evenement-container .menu li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 480px) {
+  .site__footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "widget1" "widget2" "widget3";
+    justify-content: center;
+  }
+  .site__footer .footer_1 {
+    grid-area: widget1;
+  }
+  .site__footer .footer_2 {
+    grid-area: widget2;
+  }
+  .site__footer .footer_3 {
+    grid-area: widget3;
+  }
+  .site__footer .contenu_footer {
+    grid-area: cntFter;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .site__footer {
+    grid-template-areas: "widget1 widget2 widget3" "cntFter cntFter cntFter";
+    gap: 50px;
+  }
+}
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
