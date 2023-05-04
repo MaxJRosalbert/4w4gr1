@@ -61,4 +61,23 @@
 
 .carrousel__rad {
   margin: 10px;
+}
+
+.carrousel__precedent, .carrousel__suivant {
+  position: absolute;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid skyblue;
+  border-radius: 5px;
+  top: 50%;
+}
+
+.carrousel__precedent {
+  left: 10px;
+}
+
+.carrousel__suivant {
+  right: 10px;
 }/*# sourceMappingURL=style.css.map */
