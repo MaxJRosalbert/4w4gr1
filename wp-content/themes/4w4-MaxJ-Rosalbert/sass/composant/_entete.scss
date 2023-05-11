@@ -100,7 +100,7 @@
                 letter-spacing: .04em;
                 line-height: 16px;
                 margin: 0;
-                padding: 18px 18px;
+                padding: 8px 15px;
                 text-align: center;
                 text-decoration: none;
                 text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
@@ -170,7 +170,7 @@
         transform: scaleY(100%);
         z-index: 3;
         list-style: none;
-        width: 80%;
+        width: 90%;
         top: 35%;
         right: 0;
 
@@ -178,7 +178,7 @@
             display: flex;
             flex-direction: row;
             position: absolute;
-            right: 0;
+            right: 2.5%;
             list-style-type: none;
             justify-content: flex-end;
             align-items: center;
@@ -232,7 +232,7 @@
             justify-content: space-around;
             .menu-item{ //li
                 a{
-                    padding: 5px 5px;
+                    padding: 10px 5px;
                 }
                 a:hover{}
                 a:focus{}

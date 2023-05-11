@@ -537,7 +537,7 @@ ul li li::before {
   letter-spacing: 0.04em;
   line-height: 16px;
   margin: 0;
-  padding: 18px 18px;
+  padding: 8px 15px;
   text-align: center;
   text-decoration: none;
   text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px, rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px, rgba(57, 31, 91, 0.32) 4px 4px 16px;
@@ -600,7 +600,7 @@ ul li li::before {
     transform: scaleY(100%);
     z-index: 3;
     list-style: none;
-    width: 80%;
+    width: 90%;
     top: 35%;
     right: 0;
   }
@@ -608,7 +608,7 @@ ul li li::before {
     display: flex;
     flex-direction: row;
     position: absolute;
-    right: 0;
+    right: 2.5%;
     list-style-type: none;
     justify-content: flex-end;
     align-items: center;
@@ -641,7 +641,7 @@ ul li li::before {
     justify-content: space-around;
   }
   .menu__entete .menu .menu-item a {
-    padding: 5px 5px;
+    padding: 10px 5px;
   }
 }
 /* CSS */
@@ -716,18 +716,18 @@ main {
 
 @media screen and (max-width: 1024px) {
   .blocflex {
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
   .blocflex article {
-    flex: 1 0 250px;
     padding: 5px;
     margin: 10px;
     border: 1px solid #aaa;
     background-color: var(--OrangeSombre);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px 15px 15px 15px;
+  }
+  .blocflex .blocflex__article {
+    flex: 1 0 250px;
   }
 }
 .recherche {
@@ -1018,20 +1018,64 @@ li {
   padding: 10px;
 }
 
-.menu-evenement-container .menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 480px) {
+  .menu-evenement-container .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-evenement-container .menu li a {
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .menu-evenement-container .menu li a:hover {
+    text-decoration: underline;
+  }
 }
-.menu-evenement-container .menu li a {
-  text-decoration: none;
-  font-size: x-large;
-  font-weight: bold;
+@media screen and (min-width: 768px) {
+  .menu-evenement-container {
+    background-color: transparent;
+  }
+  .menu-evenement-container .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu-evenement-container .menu .menu-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 200px;
+    height: auto;
+    margin: 10px;
+  }
+  .menu-evenement-container .menu .menu-item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .menu-evenement-container .menu .menu-item a .title {
+    font-size: 1.5rem;
+  }
+  .menu-evenement-container .menu .menu-item a .description {
+    font-size: 0.8rem;
+  }
+  .menu-evenement-container .menu .menu-item a .menu-thumbnail {
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+  .menu-evenement-container .menu .menu-item a:hover {
+    transition: all 0.5s;
+    text-decoration: underline;
+    border: 2px solid #555;
+  }
 }
-.menu-evenement-container .menu li a:hover {
-  text-decoration: underline;
-}
-
 @media screen and (min-width: 480px) {
   .site__footer {
     display: grid;
@@ -1058,6 +1102,17 @@ li {
     gap: 50px;
   }
 }
+.article__single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: auto; */
+  width: 100%;
+}
+.article__single p {
+  text-align: justify;
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid
@@ -1093,12 +1148,25 @@ Mise en page générale avec display:grid
   z-index: 2;
 }
 
-.site__aside {
-  grid-area: aside;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(139, 228, 173);
-  border-radius: 0 15px 15px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+@media screen and (max-width: 1024px) {
+  .site__aside {
+    width: 90%;
+    margin: auto;
+    grid-area: aside;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: rgb(139, 228, 173);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .site__aside {
+    grid-area: aside;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: rgb(139, 228, 173);
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .site {

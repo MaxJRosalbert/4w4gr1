@@ -1,4 +1,18 @@
-# TP2 (25 points)
+# Readme TP2 (25 points)
+
+#### Compte pour 20% de la note globale du cours de 4W4
+
+- Max-J Rosalbert
+- Titre du projet
+- Description générale
+- Les éléments que vous avez améliorés
+  - Amélioration du design et du fonctionnement de l'entête du site
+  - Une page d'accueil contenant des **blocs** annonçant les **événements**, les **nouveaux articles** ou tous autres contenus importants du site
+  - 
+- [Lien https vers votre site siteground]
+  - https://cidweb40.sg-host.com/
+
+<!-- # TP2 (25 points)
 
 #### Compte pour 20% de la note globale du cours de 4W4
 
@@ -68,3 +82,4 @@
 3. Le carrousel a été amélioré. **_(5 points)_**
 4. Organisation du sidebar et du footer, qualité du design et de l’intégration des widgets **_(5 points)_**
 5. Design général des pages simples (single.php, page.php, template-parts), intégration des **images à la une** et organisation de la programmation Sass, PHP **_(5 points)_**
+ -->

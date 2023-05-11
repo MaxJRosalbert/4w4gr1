@@ -11,20 +11,17 @@
 ?>
 <article class="blocflex__article">
     <figure class="blocflex__figure">
-        <?php 
+  
+    <?php 
 
-        if (has_post_thumbnail()) {
-            if ($id_premiere_image == 0) {
-                $id_premiere_image = get_the_ID();
-            }
-
-            the_post_thumbnail("thumbnail"); 
+    if ( has_post_thumbnail()) {
+         the_post_thumbnail("thumbnail");
         }
-        else{
-            echo get_the_post_thumbnail(198, "thumbnail");
-        }        
-        ?></figure>
-        <?php echo get_the_ID() . "id_premiere_image = " . $id_premiere_image ?>
+    else{
+        echo get_the_post_thumbnail(34, "thumbnail");
+    }
+    ?></figure>
+    <?php  echo get_the_ID(); ?>
     <h5><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
 </article>

@@ -37,12 +37,26 @@ Mise en page générale avec display:grid
 }
 
 .site__aside{
-    grid-area: aside;
-    padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: rgb(139, 228, 173);
-    border-radius: 0 15px 15px 0;
-    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
-   
+
+    @media screen and (max-width:$largeur__bureau){
+        width: 90%;
+        margin: auto;
+        grid-area: aside;
+        padding: 1rem clamp(1rem, 3vw, 20rem);
+        background-color: rgb(139, 228, 173);
+        border-radius: 15px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media screen and (min-width:$largeur__bureau){
+        grid-area: aside;
+        padding: 1rem clamp(1rem, 3vw, 20rem);
+        background-color: rgb(139, 228, 173);
+        border-radius: 0 15px 15px 0;
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.5);
+    }
+    
+
 }
 
 .site {

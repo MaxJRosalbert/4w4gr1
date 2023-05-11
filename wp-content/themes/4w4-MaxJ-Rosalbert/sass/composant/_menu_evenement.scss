@@ -1,17 +1,70 @@
-.menu-evenement-container{
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        li{
-            a{
-                text-decoration: none;
-                font-size: x-large;
-                font-weight: bold;
-            }
+@media screen and (min-width:$largeur__mobile) {
+    .menu-evenement-container{
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: x-large;
+                    font-weight: bold;
+                }
 
-            a:hover{
-                text-decoration: underline;
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:$largeur__tablette){
+    .menu-evenement-container {//nav
+        background-color: transparent;
+        .menu { // ul
+            display : flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .menu-item{ //li
+                display : flex;
+                flex-direction: column;
+                
+                flex : 1 0 200px;
+                height: auto;
+                margin : 10px;
+
+                a{
+                    display : flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+
+                    text-decoration: none;
+                    font-size: x-large;
+                    font-weight: bold;
+                                
+                    .title{
+                        font-size: 1.5rem;
+                    }
+                    .description{
+                        font-size:.8rem;
+                    }
+                    .menu-thumbnail{
+                        display : block;
+                        width : 150px;
+                        height : 150px;
+                    }
+                }
+
+                a:hover{
+                    transition: all 0.5s;
+                    text-decoration: underline;
+                    border : 2px solid #555;
+                    
+                }
             }
         }
     }
