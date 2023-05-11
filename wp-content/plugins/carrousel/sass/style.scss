@@ -1,83 +1,82 @@
-.carrousel { // boîte modale 
-    position : absolute;
+.carrousel {
+    position : fixed;
     width : 100%;
     height : 100%;
-    top : 0%;
-    left : 0%;
-    border: 1px solid #aaa;
+    top:0%;
+    left:0%;
+    border : 1px solid #444;
     background-color: aquamarine;
     transform : scale(0);
     transition : transform .5s;
 
-    @media screen and (min-width: 1000px){
-        width: 75%;
-        height: 75%;
-        top : 12.5%;
-        left : 12.5%;
+    @media screen and (min-width: 1000px) {
+        width : 75%;
+        height : 75%;
+        top:12.5%;
+        left:12.5%;
     }
+ 
 }
-
-.carrousel--active {
-    transform : scale(1);
-}
-
-.carrousel__x{
-    position : absolute;
-    top :3px;
-    right : 3px;
-    z-index : 3;
+.carrousel__x {
+    position: absolute;
+    top :5px;
+    right : 5px;
+    z-index: 3;
 }
 
 .carrousel__figure {
-    overflow: hidden;
-    // position : absolute;
+    // overflow: hidden;
     width : 100%;
-    height: auto;
-    top :0;
+    height : 100%;
+}
+
+.carrousel__img {
+    position : absolute;
+    top : 0;
     left : 0;
-}
+    object-fit:cover;
+    width : 100%;
+    height : 100%;
+    opacity : 0;
+    transition : opacity .5s;
 
-.carrousel__img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s;
 }
-
 .carrousel__img--activer{
     opacity: 1;
 }
 
-.carrousel__form{
-    position: absolute;
+
+.carrousel--activer {
+    transform : scale(1);
+}
+.carrousel__form {
+    position : absolute;
     bottom: 0;
     text-align: center;
-    width: 100%;
+    width : 100%;
 }
 
-.carrousel__rad{
-    margin: 10px;
+
+.carrousel__rad {
+    display : inline-block;
+    margin: 5px;
 }
 
-.carrousel__precedent, .carrousel__suivant{
-    position: absolute;
-    width: 50px;
+.carrousel__suivant, .carrousel__precedent {
+    position : absolute;
+    width : 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid skyblue;
+    border: 2px solid #666;
     border-radius: 5px;
-    top: 50%;
+    top : 50%;
 }
 
 .carrousel__precedent{
-    left: 10px;
+    left : 10px;
 }
 
 .carrousel__suivant{
-    right: 10px;
+    right : 10px;
 }

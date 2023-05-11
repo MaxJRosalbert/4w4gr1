@@ -40,13 +40,12 @@ add_action('wp_enqueue_scripts', 'enfiler_script_css' );
 
 function genere_boite()
 {
-    return '<button class="carrousel__ouvrir">Ouvrir Carrousel</button>
-            <div class="carrousel">
+    return '<div class="carrousel">
                 <button class="carrousel__x">X</button>
                 <figure class="carrousel__figure"></figure>
                 <form class="carrousel__form"></form>
-                <button class= "carrousel__precedent">­­«</button>
-                <button class= "carrousel__suivant">»</button>
+                <button class="carrousel__precedent">«</buton>
+                <button class="carrousel__suivant">»</buton>
             </div>';
 }
 add_shortcode('carrousel', 'genere_boite');
