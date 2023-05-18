@@ -1,4 +1,4 @@
-#checkbox2{
+#checkbox2, #checkbox3{
     display: none;
 }
 
@@ -66,4 +66,26 @@
 .menu-burger{
 display: none;
 }
+}
+
+
+
+.mission{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+.mission:hover{
+    text-decoration: underline;
+}
+
+.menu-archive:checked ~ .menu-cours-container{
+    display: block;
+}
+
+.menu-cours-container{
+    display: none;
 }

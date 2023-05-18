@@ -15,8 +15,6 @@ h1, h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-    
 }
 
 article{
@@ -39,16 +37,29 @@ article:hover{
     }
 }
 
-.blocflex__figure{
+.blocflex__article {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex : 1 0 250px;
+    padding : 5px;
+    margin : 10px;
+    border : 2px solid #0f1e35;
+}
+
+.blocflex__figure {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
-    img{
-        display: block;
-        width: 150px;
-    }
-}
+        
+     img {
+         display: block;
+         width : 150px;
+         
+     }
+ }
 
 .blocflex__galerie{
     flex: 1 0 100%;

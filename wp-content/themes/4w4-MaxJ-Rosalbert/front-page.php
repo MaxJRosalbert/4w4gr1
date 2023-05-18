@@ -6,12 +6,25 @@
 
 <?php get_header(); ?>
     <main class="site__main">
+    <div class="sidebar">
+            <?php dynamic_sidebar( 'entete_1' ); ?>
+        </div>
         <h1>Bienvenue sur 4W4</h1>
-  <h2>Les Événements à venir</h2>
-        <section class="blocflex">
-            
+        <h2>Les Événements à venir</h2>
+
+        <section class="bloc__viewport">    
                  <?php wp_nav_menu(array(
             "menu"=>"evenement",
+            "container"=>"nav"
+        )); ?>
+    <!-- <h2 class="mission"  for="checkbox2"></h2> -->
+
+    <input type="checkbox" id="checkbox3" class="menu-archive">
+    <label class="mission" for="checkbox3">Notre mission</label>
+    <!-- <label class="menu-archive" for="checkbox2"> -->
+
+<?php wp_nav_menu(array(
+            "menu"=>"bloc-archive",
             "container"=>"nav"
         )); ?>
         </section>

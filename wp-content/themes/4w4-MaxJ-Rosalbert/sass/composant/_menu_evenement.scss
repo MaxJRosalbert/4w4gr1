@@ -1,5 +1,6 @@
 @media screen and (min-width:$largeur__mobile) {
-    .menu-evenement-container{
+    .menu-evenement-container, 
+    .menu-bloc-archive-container{
         .menu {
             display: flex;
             flex-direction: column;
@@ -19,6 +20,20 @@
     }
 }
 
+.img__archive{
+    width : 25%;
+    height: 50px;
+    object-fit: cover; 
+    background-repeat: no-repeat;
+ }
+ .menu-cours-container .img__archive {
+     background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+ }
+ .menu-4w4-container  .img__archive{
+     background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=briefcase");
+
+ }
+ 
 @media screen and (min-width:$largeur__tablette){
     .menu-evenement-container {//nav
         background-color: transparent;
@@ -36,9 +51,10 @@
                 margin : 10px;
 
                 a{
-                    display : flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                    display: flex;
+                    flex-direction: row-reverse;
+                // justify-content: space-between;
+                    
                     align-items: center;
                     text-align: center;
 

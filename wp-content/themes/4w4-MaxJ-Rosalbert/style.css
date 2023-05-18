@@ -684,6 +684,18 @@ article:hover h5 {
   font-size: xx-large;
 }
 
+.blocflex__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1 0 250px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid #0f1e35;
+}
+
 .blocflex__figure {
   display: flex;
   justify-content: center;
@@ -831,19 +843,21 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .menu-cours-container .menu {
-    flex-direction: column;
     justify-content: flex-start;
   }
 }
 .menu-cours-container .menu .menu-item {
-  flex: 1 0 40px;
+  flex: 1 0 300px;
 }
 .menu-cours-container .menu .menu-item a {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
 }
 @media screen and (min-width: 1024px) {
   .menu-cours-container .menu .menu-item a {
@@ -860,8 +874,12 @@ main {
     padding: 10px;
   }
 }
+.menu-cours-container .menu .menu-item a:hover {
+  text-decoration: underline;
+  border: 2px solid #555;
+}
 
-#checkbox2 {
+#checkbox2, #checkbox3 {
   display: none;
 }
 
@@ -929,6 +947,26 @@ main {
     display: none;
   }
 }
+.mission {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.mission:hover {
+  text-decoration: underline;
+}
+
+.menu-archive:checked ~ .menu-cours-container {
+  display: block;
+}
+
+.menu-cours-container {
+  display: none;
+}
+
 /*
 *
 main.erreur404 {
@@ -1019,20 +1057,38 @@ li {
 }
 
 @media screen and (min-width: 480px) {
-  .menu-evenement-container .menu {
+  .menu-evenement-container .menu,
+.menu-bloc-archive-container .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .menu-evenement-container .menu li a {
+  .menu-evenement-container .menu li a,
+.menu-bloc-archive-container .menu li a {
     text-decoration: none;
     font-size: x-large;
     font-weight: bold;
   }
-  .menu-evenement-container .menu li a:hover {
+  .menu-evenement-container .menu li a:hover,
+.menu-bloc-archive-container .menu li a:hover {
     text-decoration: underline;
   }
 }
+.img__archive {
+  width: 25%;
+  height: 50px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-cours-container .img__archive {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+
+.menu-4w4-container .img__archive {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=briefcase");
+}
+
 @media screen and (min-width: 768px) {
   .menu-evenement-container {
     background-color: transparent;
@@ -1051,8 +1107,7 @@ li {
   }
   .menu-evenement-container .menu .menu-item a {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row-reverse;
     align-items: center;
     text-align: center;
     text-decoration: none;
