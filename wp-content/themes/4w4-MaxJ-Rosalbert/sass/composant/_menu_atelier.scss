@@ -1,10 +1,55 @@
 .menu-atelier-container{
-    display: flex;
-    flex-direction: row;
+    background-color: transparent;
+    .menu { // ul
+        display : flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-    .menu-thumbnail{
-        display: block;
-        width: 200px;
-        height: 200px;
+        .menu-item{ //li
+            display : flex;
+            flex-direction: column;
+            
+            flex : 1 0 200px;
+            height: auto;
+            margin : 10px;
+
+            a{
+                display: flex;
+                flex-direction: row-reverse;
+            // justify-content: space-between;
+                
+                align-items: center;
+                text-align: center;
+
+                text-decoration: none;
+                font-size: x-large;
+                font-weight: bold;
+                            
+                .title{
+                    font-size: 1.5rem;
+                }
+                .description{
+                    font-size:.8rem;
+                }
+                .menu-thumbnail{
+                    display : block;
+                    width : 150px;
+                    height : 150px;
+                }
+            }
+
+            a:hover{
+                transition: all 0.5s;
+                text-decoration: underline;
+                border : 2px solid #555;
+                
+            }
+        }
     }
-}
+} 
+    .site__main{
+        img{
+            position: absolute;
+            left: 0;
+        }
+    }

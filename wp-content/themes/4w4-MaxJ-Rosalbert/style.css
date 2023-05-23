@@ -1168,6 +1168,52 @@ li {
   text-align: justify;
 }
 
+.menu-atelier-container {
+  background-color: transparent;
+}
+.menu-atelier-container .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-atelier-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 200px;
+  height: auto;
+  margin: 10px;
+}
+.menu-atelier-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+}
+.menu-atelier-container .menu .menu-item a .title {
+  font-size: 1.5rem;
+}
+.menu-atelier-container .menu .menu-item a .description {
+  font-size: 0.8rem;
+}
+.menu-atelier-container .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+.menu-atelier-container .menu .menu-item a:hover {
+  transition: all 0.5s;
+  text-decoration: underline;
+  border: 2px solid #555;
+}
+
+.site__main img {
+  position: absolute;
+  left: 0;
+}
+
 /* --------------------------------------------- layout */
 /**
 Mise en page générale avec display:grid

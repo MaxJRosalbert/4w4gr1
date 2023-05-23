@@ -4,7 +4,8 @@
  */
 ?>
 <?php get_header(); ?>
-<main class="site__main">
+<main class="site__main aside-atelier">
+    <pre>Les ateliers du TIM</pre>
     <?php
         if ( have_posts() ) : the_post(); ?>
         <?php the_post_thumbnail('medium'); ?>
