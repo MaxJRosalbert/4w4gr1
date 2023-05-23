@@ -5,7 +5,7 @@
 ?>
 
 <aside class="site__aside">
-
+<?php the_post_thumbnail('medium'); ?>
 <h3>Menu secondaire</h3>
     <?php 
     $menu = "notes-4w4"; 

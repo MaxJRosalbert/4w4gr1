@@ -8,7 +8,7 @@
     <pre>Les ateliers du TIM</pre>
     <?php
         if ( have_posts() ) : the_post(); ?>
-        <?php the_post_thumbnail('medium'); ?>
+        
         <h1><?= get_the_title(); ?></h1>
         <?php the_content();?>
         <table>
