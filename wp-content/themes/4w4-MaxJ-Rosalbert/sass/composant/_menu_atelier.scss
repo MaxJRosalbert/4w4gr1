@@ -1,0 +1,10 @@
+.menu-atelier-container{
+    display: flex;
+    flex-direction: row;
+
+    .menu-thumbnail{
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+}
