@@ -1209,9 +1209,29 @@ li {
   border: 2px solid #555;
 }
 
-.site__main img {
+.aside-atelier img {
+  display: flex;
   position: absolute;
   left: 0;
+}
+.aside-atelier th {
+  background-color: #c9c9c9;
+  text-align: left;
+}
+.aside-atelier td {
+  background-color: #c9c9c9;
+  text-align: left;
+  color: greenyellow;
+}
+
+.no-aside {
+  display: none;
+}
+
+.site__aside .menu-atelier-container .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* --------------------------------------------- layout */

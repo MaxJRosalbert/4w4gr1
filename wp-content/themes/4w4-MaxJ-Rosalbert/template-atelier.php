@@ -11,11 +11,28 @@
         <?php the_post_thumbnail('medium'); ?>
         <h1><?= get_the_title(); ?></h1>
         <?php the_content();?>
-        <p>Date <?php the_field('date'); ?></p>     
-        <p>Heure <?php the_field('heure'); ?></p>     
-        <p>Durée<?php the_field('duree'); ?>Heures</p>     
-        <p>Local<?php the_field('local'); ?></p>     
-        <p>Formateur<?php the_field('formateur'); ?></p>     
+        <table>
+            <tr>
+                <th>Date</th>
+                <td><?php the_field('date'); ?></td>
+            </tr>
+            <tr>
+                <th>Heure</th>
+                <td><?php the_field('heure'); ?></td>
+            </tr>
+            <tr>
+                <th>Durée</th>
+                <td><?php the_field('duree'); ?>Heures</td>
+            </tr>
+            <tr>
+                <th>Local</th>
+                <td><?php the_field('local'); ?></td>
+            </tr>
+            <tr>
+                <th>Formateur</th>
+                <td><?php the_field('formateur'); ?></td>
+            </tr>
+        </table>
         <?php endif;?>
 </main><!-- #main -->
     <?php
